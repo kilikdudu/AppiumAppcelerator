@@ -1,0 +1,18 @@
+{
+  "name": "AppiumAppcelerator",
+  "version": "1.0.0",
+  "description": "Sample test",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/cenario",
+    "clean": "rm -rf node_modules && rm -f package-lock.json && npm install"
+  },
+  "author": "Carlos Eduardo",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "chai": "^4.1.2",
+    "mocha": "^6.0.0",
+    "webdriverio": "^5.1.0"
+  }
+}
