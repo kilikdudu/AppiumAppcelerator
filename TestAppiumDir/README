@@ -2,7 +2,7 @@ Antes de executar o teste é necessário ter o .apk ou .app do aplicativo.
 Para iniciar a compilação do aplicativo utilize o comando:
 > appc run --platform ios --target simulator --log-level info --project-dir /Users/carlos/Documents/GitHub/AppiumAppcelerator --device-id [Simulator Id (POde se obter pelo Xcode)]
 
-Para executar os testes utilize o comando:
+Para executar os testes utilize o comando (devem ser executados com o terminal nessa pasta):
 > npm install webdriverio # Apenas na primeira vez
 > npm test
 
@@ -10,4 +10,4 @@ Para executar os testes utilize o comando:
 Verificar a instalação dos seguintes pacotes:
 > brew install node      # get node.js
 > npm install -g appium  # get appium
-> npm install wd         # get appium client
+> npm install -g wd      # get appium client
