@@ -7,6 +7,11 @@
     "test": "mocha test/cenario",
     "clean": "rm -rf node_modules && rm -f package-lock.json && npm install"
   },
+  "config":{
+    "sauce":"1",
+    "sauce_username":"<SAUCE_USERNAME>",
+    "sauce_access_key":"<SAUCE_ACCESS_KEY>"
+  },
   "author": "Carlos Eduardo",
   "license": "Apache-2.0",
   "devDependencies": {

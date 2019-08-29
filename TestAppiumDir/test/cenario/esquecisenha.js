@@ -2,16 +2,11 @@
 
 const webdriverio = require("webdriverio");
 const assert = require('chai').assert;
+const config = require('../config.js');
 
 const opts = {
-  port: 4723,
-  capabilities: {
-    platformName: "iOS",
-    platformVersion: "12.4",
-    deviceName: "iPhone 6s Plus",
-    app: "/Users/carlos/Documents/Appcelerator_Studio_Workspace/AppiumAppcelerator/build/iphone/build/Products/Debug-iphonesimulator/AppiumAppcelerator.app",
-    automationName: "xcuitest"
-  }
+  port: config.porta,
+  capabilities: config.capabilities
 };
 
 
@@ -28,7 +23,7 @@ describe('Testes de esqueci a senha', function () {
 
   it('Esqueci a senha correto', async function () {
     const fieldCpf = await client.$("~Preencha o cpf");
-    await fieldCpf.setValue("123.456.789-01");
+    await fieldCpf.setValue(config.cpf);
 
     let element = await client.$("~Esqueci a senha");
     await element.click();
