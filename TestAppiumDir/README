@@ -11,3 +11,4 @@ Verificar a instalação dos seguintes pacotes:
 > brew install node      # get node.js
 > npm install -g appium  # get appium
 > npm install -g wd      # get appium client
+> brew install parallel

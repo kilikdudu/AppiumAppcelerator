@@ -1,0 +1,195 @@
+
+    Testes de esqueci a senha Esqueci a senha correto: 2019-08-30T17:32:23.024Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session
+2019-08-30T17:32:23.025Z INFO webdriver: DATA { capabilities:
+   { alwaysMatch:
+      { platformName: 'iOS',
+        platformVersion: '12.4',
+        deviceName: 'iPhone 6s Plus',
+        app:
+         '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/iphone/build/Products/Debug-iphonesimulator/AppiumAppcelerator.app',
+        automationName: 'xcuitest' },
+     firstMatch: [ {} ] },
+  desiredCapabilities:
+   { platformName: 'iOS',
+     platformVersion: '12.4',
+     deviceName: 'iPhone 6s Plus',
+     app:
+      '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/iphone/build/Products/Debug-iphonesimulator/AppiumAppcelerator.app',
+     automationName: 'xcuitest' } }
+2019-08-30T17:32:33.681Z INFO webdriver: COMMAND findElement("accessibility id", "Preencha o cpf")
+2019-08-30T17:32:33.682Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/e088bb52-0c88-494f-a8ee-1909b0c36e47/element
+2019-08-30T17:32:33.683Z INFO webdriver: DATA { using: 'accessibility id', value: 'Preencha o cpf' }
+2019-08-30T17:32:33.855Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '18000000-0000-0000-6365-000000000000',
+  ELEMENT: '18000000-0000-0000-6365-000000000000' }
+2019-08-30T17:32:33.867Z INFO webdriver: COMMAND elementClear("18000000-0000-0000-6365-000000000000")
+2019-08-30T17:32:33.867Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/e088bb52-0c88-494f-a8ee-1909b0c36e47/element/18000000-0000-0000-6365-000000000000/clear
+2019-08-30T17:32:33.962Z INFO webdriver: COMMAND elementSendKeys("18000000-0000-0000-6365-000000000000", "123.456.789-01", <object>)
+2019-08-30T17:32:33.962Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/e088bb52-0c88-494f-a8ee-1909b0c36e47/element/18000000-0000-0000-6365-000000000000/value
+2019-08-30T17:32:33.962Z INFO webdriver: DATA { text: '123.456.789-01',
+  value:
+   [ '1', '2', '3', '.', '4', '5', '6', '.', '7', '8', '9', '-', '0', '1' ] }
+2019-08-30T17:32:35.554Z INFO webdriver: COMMAND findElement("accessibility id", "Esqueci a senha")
+2019-08-30T17:32:35.554Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/e088bb52-0c88-494f-a8ee-1909b0c36e47/element
+2019-08-30T17:32:35.554Z INFO webdriver: DATA { using: 'accessibility id', value: 'Esqueci a senha' }
+2019-08-30T17:32:35.705Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '1B000000-0000-0000-6365-000000000000',
+  ELEMENT: '1B000000-0000-0000-6365-000000000000' }
+2019-08-30T17:32:35.708Z INFO webdriver: COMMAND elementClick("1B000000-0000-0000-6365-000000000000")
+2019-08-30T17:32:35.708Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/e088bb52-0c88-494f-a8ee-1909b0c36e47/element/1B000000-0000-0000-6365-000000000000/click
+2019-08-30T17:32:36.261Z INFO webdriver: RESULT 
+2019-08-30T17:32:36.261Z INFO webdriver: COMMAND getAlertText()
+2019-08-30T17:32:36.262Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/e088bb52-0c88-494f-a8ee-1909b0c36e47/alert/text
+2019-08-30T17:32:36.663Z INFO webdriver: RESULT Sua nova senha foi enviada para o seu email.
+  ✓ Testes de esqueci a senha Esqueci a senha correto: 2984ms
+2019-08-30T17:32:36.665Z INFO webdriver: COMMAND deleteSession()
+2019-08-30T17:32:36.666Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/e088bb52-0c88-494f-a8ee-1909b0c36e47
+    Testes de esqueci a senha Esqueci a senha - tratamento de erro: 2019-08-30T17:32:37.754Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session
+2019-08-30T17:32:37.754Z INFO webdriver: DATA { capabilities:
+   { alwaysMatch:
+      { platformName: 'iOS',
+        platformVersion: '12.4',
+        deviceName: 'iPhone 6s Plus',
+        app:
+         '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/iphone/build/Products/Debug-iphonesimulator/AppiumAppcelerator.app',
+        automationName: 'xcuitest' },
+     firstMatch: [ {} ] },
+  desiredCapabilities:
+   { platformName: 'iOS',
+     platformVersion: '12.4',
+     deviceName: 'iPhone 6s Plus',
+     app:
+      '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/iphone/build/Products/Debug-iphonesimulator/AppiumAppcelerator.app',
+     automationName: 'xcuitest' } }
+2019-08-30T17:32:46.220Z INFO webdriver: COMMAND findElement("accessibility id", "Preencha o cpf")
+2019-08-30T17:32:46.220Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/37d3c9a0-6f57-466b-bf5c-4fb165bd10e4/element
+2019-08-30T17:32:46.220Z INFO webdriver: DATA { using: 'accessibility id', value: 'Preencha o cpf' }
+2019-08-30T17:32:46.356Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '18000000-0000-0000-CD65-000000000000',
+  ELEMENT: '18000000-0000-0000-CD65-000000000000' }
+2019-08-30T17:32:46.360Z INFO webdriver: COMMAND elementClear("18000000-0000-0000-CD65-000000000000")
+2019-08-30T17:32:46.360Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/37d3c9a0-6f57-466b-bf5c-4fb165bd10e4/element/18000000-0000-0000-CD65-000000000000/clear
+2019-08-30T17:32:46.464Z INFO webdriver: COMMAND elementSendKeys("18000000-0000-0000-CD65-000000000000", "", <object>)
+2019-08-30T17:32:46.464Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/37d3c9a0-6f57-466b-bf5c-4fb165bd10e4/element/18000000-0000-0000-CD65-000000000000/value
+2019-08-30T17:32:46.465Z INFO webdriver: DATA { text: '', value: [] }
+2019-08-30T17:32:47.805Z INFO webdriver: COMMAND findElement("accessibility id", "Esqueci a senha")
+2019-08-30T17:32:47.805Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/37d3c9a0-6f57-466b-bf5c-4fb165bd10e4/element
+2019-08-30T17:32:47.805Z INFO webdriver: DATA { using: 'accessibility id', value: 'Esqueci a senha' }
+2019-08-30T17:32:47.952Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '1B000000-0000-0000-CD65-000000000000',
+  ELEMENT: '1B000000-0000-0000-CD65-000000000000' }
+2019-08-30T17:32:47.955Z INFO webdriver: COMMAND elementClick("1B000000-0000-0000-CD65-000000000000")
+2019-08-30T17:32:47.956Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/37d3c9a0-6f57-466b-bf5c-4fb165bd10e4/element/1B000000-0000-0000-CD65-000000000000/click
+2019-08-30T17:32:48.311Z INFO webdriver: RESULT 
+2019-08-30T17:32:48.311Z INFO webdriver: COMMAND getAlertText()
+2019-08-30T17:32:48.311Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/37d3c9a0-6f57-466b-bf5c-4fb165bd10e4/alert/text
+2019-08-30T17:32:48.606Z INFO webdriver: RESULT Preencha o cpf primeiro.
+  ✓ Testes de esqueci a senha Esqueci a senha - tratamento de erro: 2387ms
+2019-08-30T17:32:48.607Z INFO webdriver: COMMAND deleteSession()
+2019-08-30T17:32:48.607Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/37d3c9a0-6f57-466b-bf5c-4fb165bd10e4
+    Testes de login Login correto: 2019-08-30T17:32:49.714Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session
+2019-08-30T17:32:49.714Z INFO webdriver: DATA { capabilities:
+   { alwaysMatch:
+      { platformName: 'iOS',
+        platformVersion: '12.4',
+        deviceName: 'iPhone 6s Plus',
+        app:
+         '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/iphone/build/Products/Debug-iphonesimulator/AppiumAppcelerator.app',
+        automationName: 'xcuitest' },
+     firstMatch: [ {} ] },
+  desiredCapabilities:
+   { platformName: 'iOS',
+     platformVersion: '12.4',
+     deviceName: 'iPhone 6s Plus',
+     app:
+      '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/iphone/build/Products/Debug-iphonesimulator/AppiumAppcelerator.app',
+     automationName: 'xcuitest' } }
+2019-08-30T17:32:58.620Z INFO webdriver: COMMAND findElement("accessibility id", "Preencha o cpf")
+2019-08-30T17:32:58.620Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/664f8e27-12ee-401b-8aa0-da3416ca386e/element
+2019-08-30T17:32:58.620Z INFO webdriver: DATA { using: 'accessibility id', value: 'Preencha o cpf' }
+2019-08-30T17:32:58.764Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '18000000-0000-0000-3566-000000000000',
+  ELEMENT: '18000000-0000-0000-3566-000000000000' }
+2019-08-30T17:32:58.766Z INFO webdriver: COMMAND elementClear("18000000-0000-0000-3566-000000000000")
+2019-08-30T17:32:58.766Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/664f8e27-12ee-401b-8aa0-da3416ca386e/element/18000000-0000-0000-3566-000000000000/clear
+2019-08-30T17:32:58.856Z INFO webdriver: COMMAND elementSendKeys("18000000-0000-0000-3566-000000000000", "123.456.789-01", <object>)
+2019-08-30T17:32:58.856Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/664f8e27-12ee-401b-8aa0-da3416ca386e/element/18000000-0000-0000-3566-000000000000/value
+2019-08-30T17:32:58.856Z INFO webdriver: DATA { text: '123.456.789-01',
+  value:
+   [ '1', '2', '3', '.', '4', '5', '6', '.', '7', '8', '9', '-', '0', '1' ] }
+2019-08-30T17:33:00.454Z INFO webdriver: COMMAND findElement("accessibility id", "Preencha a senha")
+2019-08-30T17:33:00.454Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/664f8e27-12ee-401b-8aa0-da3416ca386e/element
+2019-08-30T17:33:00.454Z INFO webdriver: DATA { using: 'accessibility id', value: 'Preencha a senha' }
+2019-08-30T17:33:00.654Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '19000000-0000-0000-3566-000000000000',
+  ELEMENT: '19000000-0000-0000-3566-000000000000' }
+2019-08-30T17:33:00.658Z INFO webdriver: COMMAND elementClear("19000000-0000-0000-3566-000000000000")
+2019-08-30T17:33:00.658Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/664f8e27-12ee-401b-8aa0-da3416ca386e/element/19000000-0000-0000-3566-000000000000/clear
+2019-08-30T17:33:00.757Z INFO webdriver: COMMAND elementSendKeys("19000000-0000-0000-3566-000000000000", "123456", <object>)
+2019-08-30T17:33:00.757Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/664f8e27-12ee-401b-8aa0-da3416ca386e/element/19000000-0000-0000-3566-000000000000/value
+2019-08-30T17:33:00.757Z INFO webdriver: DATA { text: '123456', value: [ '1', '2', '3', '4', '5', '6' ] }
+2019-08-30T17:33:01.753Z INFO webdriver: COMMAND findElement("accessibility id", "Entrar")
+2019-08-30T17:33:01.753Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/664f8e27-12ee-401b-8aa0-da3416ca386e/element
+2019-08-30T17:33:01.754Z INFO webdriver: DATA { using: 'accessibility id', value: 'Entrar' }
+2019-08-30T17:33:01.903Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '1A000000-0000-0000-3566-000000000000',
+  ELEMENT: '1A000000-0000-0000-3566-000000000000' }
+2019-08-30T17:33:01.905Z INFO webdriver: COMMAND elementClick("1A000000-0000-0000-3566-000000000000")
+2019-08-30T17:33:01.905Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/664f8e27-12ee-401b-8aa0-da3416ca386e/element/1A000000-0000-0000-3566-000000000000/click
+2019-08-30T17:33:02.307Z INFO webdriver: RESULT 
+2019-08-30T17:33:02.307Z INFO webdriver: COMMAND getAlertText()
+2019-08-30T17:33:02.311Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/664f8e27-12ee-401b-8aa0-da3416ca386e/alert/text
+2019-08-30T17:33:02.655Z INFO webdriver: RESULT Sucesso
+  ✓ Testes de login Login correto: 4037ms
+2019-08-30T17:33:02.656Z INFO webdriver: COMMAND deleteSession()
+2019-08-30T17:33:02.656Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/664f8e27-12ee-401b-8aa0-da3416ca386e
+    Testes de login Login incorreto: 2019-08-30T17:33:03.711Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session
+2019-08-30T17:33:03.711Z INFO webdriver: DATA { capabilities:
+   { alwaysMatch:
+      { platformName: 'iOS',
+        platformVersion: '12.4',
+        deviceName: 'iPhone 6s Plus',
+        app:
+         '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/iphone/build/Products/Debug-iphonesimulator/AppiumAppcelerator.app',
+        automationName: 'xcuitest' },
+     firstMatch: [ {} ] },
+  desiredCapabilities:
+   { platformName: 'iOS',
+     platformVersion: '12.4',
+     deviceName: 'iPhone 6s Plus',
+     app:
+      '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/iphone/build/Products/Debug-iphonesimulator/AppiumAppcelerator.app',
+     automationName: 'xcuitest' } }
+2019-08-30T17:33:12.311Z INFO webdriver: COMMAND findElement("accessibility id", "Preencha o cpf")
+2019-08-30T17:33:12.311Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/2855da51-4c98-433f-b36e-a44233194ed9/element
+2019-08-30T17:33:12.311Z INFO webdriver: DATA { using: 'accessibility id', value: 'Preencha o cpf' }
+2019-08-30T17:33:12.403Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '18000000-0000-0000-9E66-000000000000',
+  ELEMENT: '18000000-0000-0000-9E66-000000000000' }
+2019-08-30T17:33:12.404Z INFO webdriver: COMMAND elementClear("18000000-0000-0000-9E66-000000000000")
+2019-08-30T17:33:12.405Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/2855da51-4c98-433f-b36e-a44233194ed9/element/18000000-0000-0000-9E66-000000000000/clear
+2019-08-30T17:33:12.462Z INFO webdriver: COMMAND elementSendKeys("18000000-0000-0000-9E66-000000000000", "123.456.789-01", <object>)
+2019-08-30T17:33:12.462Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/2855da51-4c98-433f-b36e-a44233194ed9/element/18000000-0000-0000-9E66-000000000000/value
+2019-08-30T17:33:12.462Z INFO webdriver: DATA { text: '123.456.789-01',
+  value:
+   [ '1', '2', '3', '.', '4', '5', '6', '.', '7', '8', '9', '-', '0', '1' ] }
+2019-08-30T17:33:14.054Z INFO webdriver: COMMAND findElement("accessibility id", "Preencha a senha")
+2019-08-30T17:33:14.054Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/2855da51-4c98-433f-b36e-a44233194ed9/element
+2019-08-30T17:33:14.054Z INFO webdriver: DATA { using: 'accessibility id', value: 'Preencha a senha' }
+2019-08-30T17:33:14.203Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '19000000-0000-0000-9E66-000000000000',
+  ELEMENT: '19000000-0000-0000-9E66-000000000000' }
+2019-08-30T17:33:14.205Z INFO webdriver: COMMAND elementClear("19000000-0000-0000-9E66-000000000000")
+2019-08-30T17:33:14.205Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/2855da51-4c98-433f-b36e-a44233194ed9/element/19000000-0000-0000-9E66-000000000000/clear
+2019-08-30T17:33:14.277Z INFO webdriver: COMMAND elementSendKeys("19000000-0000-0000-9E66-000000000000", "12345601", <object>)
+2019-08-30T17:33:14.277Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/2855da51-4c98-433f-b36e-a44233194ed9/element/19000000-0000-0000-9E66-000000000000/value
+2019-08-30T17:33:14.277Z INFO webdriver: DATA { text: '12345601',
+  value: [ '1', '2', '3', '4', '5', '6', '0', '1' ] }
+2019-08-30T17:33:15.255Z INFO webdriver: COMMAND findElement("accessibility id", "Entrar")
+2019-08-30T17:33:15.255Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/2855da51-4c98-433f-b36e-a44233194ed9/element
+2019-08-30T17:33:15.255Z INFO webdriver: DATA { using: 'accessibility id', value: 'Entrar' }
+2019-08-30T17:33:15.403Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '1A000000-0000-0000-9E66-000000000000',
+  ELEMENT: '1A000000-0000-0000-9E66-000000000000' }
+2019-08-30T17:33:15.405Z INFO webdriver: COMMAND elementClick("1A000000-0000-0000-9E66-000000000000")
+2019-08-30T17:33:15.405Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/2855da51-4c98-433f-b36e-a44233194ed9/element/1A000000-0000-0000-9E66-000000000000/click
+2019-08-30T17:33:15.903Z INFO webdriver: RESULT 
+2019-08-30T17:33:15.903Z INFO webdriver: COMMAND getAlertText()
+2019-08-30T17:33:15.904Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/2855da51-4c98-433f-b36e-a44233194ed9/alert/text
+2019-08-30T17:33:16.206Z INFO webdriver: RESULT Falhou
+  ✓ Testes de login Login incorreto: 3896ms
+2019-08-30T17:33:16.206Z INFO webdriver: COMMAND deleteSession()
+2019-08-30T17:33:16.206Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/2855da51-4c98-433f-b36e-a44233194ed9
+
+  4 passing (54s)
+

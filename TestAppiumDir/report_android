@@ -1,0 +1,249 @@
+
+    Testes de esqueci a senha Esqueci a senha correto: 2019-08-30T17:32:23.024Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session
+2019-08-30T17:32:23.025Z INFO webdriver: DATA { capabilities:
+   { alwaysMatch:
+      { platformName: 'Android',
+        platformVersion: '9',
+        deviceName: 'Nexus 6P Teste API 28',
+        app:
+         '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/android/bin/AppiumAppcelerator.apk',
+        automationName: 'UiAutomator2',
+        appActivity:
+         'br.com.foursys.appiumappcelerator.AppiumappceleratorActivity',
+        appPackage: 'br.com.foursys.appiumappcelerator' },
+     firstMatch: [ {} ] },
+  desiredCapabilities:
+   { platformName: 'Android',
+     platformVersion: '9',
+     deviceName: 'Nexus 6P Teste API 28',
+     app:
+      '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/android/bin/AppiumAppcelerator.apk',
+     automationName: 'UiAutomator2',
+     appActivity:
+      'br.com.foursys.appiumappcelerator.AppiumappceleratorActivity',
+     appPackage: 'br.com.foursys.appiumappcelerator' } }
+2019-08-30T17:32:30.621Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc='Preencha o cpf.']/android.widget.FrameLayout/android.widget.EditText")
+2019-08-30T17:32:30.622Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/4e47a260-f881-42f1-9b5f-319471ff1db5/element
+2019-08-30T17:32:30.622Z INFO webdriver: DATA { using: 'xpath',
+  value:
+   '//*[@content-desc=\'Preencha o cpf.\']/android.widget.FrameLayout/android.widget.EditText' }
+2019-08-30T17:32:31.113Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'fa8523bb-e301-4fc9-a862-cb6d43af23a3',
+  ELEMENT: 'fa8523bb-e301-4fc9-a862-cb6d43af23a3' }
+2019-08-30T17:32:31.119Z INFO webdriver: COMMAND elementClear("fa8523bb-e301-4fc9-a862-cb6d43af23a3")
+2019-08-30T17:32:31.119Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/4e47a260-f881-42f1-9b5f-319471ff1db5/element/fa8523bb-e301-4fc9-a862-cb6d43af23a3/clear
+2019-08-30T17:32:31.258Z INFO webdriver: RESULT Element Cleared
+2019-08-30T17:32:31.266Z INFO webdriver: COMMAND elementSendKeys("fa8523bb-e301-4fc9-a862-cb6d43af23a3", "123.456.789-01", <object>)
+2019-08-30T17:32:31.267Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/4e47a260-f881-42f1-9b5f-319471ff1db5/element/fa8523bb-e301-4fc9-a862-cb6d43af23a3/value
+2019-08-30T17:32:31.267Z INFO webdriver: DATA { text: '123.456.789-01',
+  value:
+   [ '1', '2', '3', '.', '4', '5', '6', '.', '7', '8', '9', '-', '0', '1' ] }
+2019-08-30T17:32:32.253Z INFO webdriver: RESULT 
+2019-08-30T17:32:32.253Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc='Esqueci a senha.']")
+2019-08-30T17:32:32.253Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/4e47a260-f881-42f1-9b5f-319471ff1db5/element
+2019-08-30T17:32:32.254Z INFO webdriver: DATA { using: 'xpath',
+  value: '//*[@content-desc=\'Esqueci a senha.\']' }
+2019-08-30T17:32:32.852Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '85062d1b-7694-4b63-a7c8-682c316ccbe5',
+  ELEMENT: '85062d1b-7694-4b63-a7c8-682c316ccbe5' }
+2019-08-30T17:32:32.855Z INFO webdriver: COMMAND elementClick("85062d1b-7694-4b63-a7c8-682c316ccbe5")
+2019-08-30T17:32:32.855Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/4e47a260-f881-42f1-9b5f-319471ff1db5/element/85062d1b-7694-4b63-a7c8-682c316ccbe5/click
+2019-08-30T17:32:32.903Z INFO webdriver: RESULT true
+2019-08-30T17:32:32.903Z INFO webdriver: COMMAND getAlertText()
+2019-08-30T17:32:32.903Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/4e47a260-f881-42f1-9b5f-319471ff1db5/alert/text
+2019-08-30T17:32:33.552Z INFO webdriver: RESULT Alerta
+Sua nova senha foi enviada para o seu email.
+  ✓ Testes de esqueci a senha Esqueci a senha correto: 2933ms
+2019-08-30T17:32:33.554Z INFO webdriver: COMMAND deleteSession()
+2019-08-30T17:32:33.554Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/4e47a260-f881-42f1-9b5f-319471ff1db5
+    Testes de esqueci a senha Esqueci a senha - tratamento de erro: 2019-08-30T17:32:34.156Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session
+2019-08-30T17:32:34.156Z INFO webdriver: DATA { capabilities:
+   { alwaysMatch:
+      { platformName: 'Android',
+        platformVersion: '9',
+        deviceName: 'Nexus 6P Teste API 28',
+        app:
+         '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/android/bin/AppiumAppcelerator.apk',
+        automationName: 'UiAutomator2',
+        appActivity:
+         'br.com.foursys.appiumappcelerator.AppiumappceleratorActivity',
+        appPackage: 'br.com.foursys.appiumappcelerator' },
+     firstMatch: [ {} ] },
+  desiredCapabilities:
+   { platformName: 'Android',
+     platformVersion: '9',
+     deviceName: 'Nexus 6P Teste API 28',
+     app:
+      '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/android/bin/AppiumAppcelerator.apk',
+     automationName: 'UiAutomator2',
+     appActivity:
+      'br.com.foursys.appiumappcelerator.AppiumappceleratorActivity',
+     appPackage: 'br.com.foursys.appiumappcelerator' } }
+2019-08-30T17:32:42.321Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc='Preencha o cpf.']/android.widget.FrameLayout/android.widget.EditText")
+2019-08-30T17:32:42.322Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/6fa32300-876d-431e-93b5-70dbdb075106/element
+2019-08-30T17:32:42.322Z INFO webdriver: DATA { using: 'xpath',
+  value:
+   '//*[@content-desc=\'Preencha o cpf.\']/android.widget.FrameLayout/android.widget.EditText' }
+2019-08-30T17:32:42.752Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '530c12f3-c01c-45e8-8768-b8a29f97dbdd',
+  ELEMENT: '530c12f3-c01c-45e8-8768-b8a29f97dbdd' }
+2019-08-30T17:32:42.755Z INFO webdriver: COMMAND elementClear("530c12f3-c01c-45e8-8768-b8a29f97dbdd")
+2019-08-30T17:32:42.755Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/6fa32300-876d-431e-93b5-70dbdb075106/element/530c12f3-c01c-45e8-8768-b8a29f97dbdd/clear
+2019-08-30T17:32:42.805Z INFO webdriver: RESULT Element Cleared
+2019-08-30T17:32:42.805Z INFO webdriver: COMMAND elementSendKeys("530c12f3-c01c-45e8-8768-b8a29f97dbdd", "", <object>)
+2019-08-30T17:32:42.805Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/6fa32300-876d-431e-93b5-70dbdb075106/element/530c12f3-c01c-45e8-8768-b8a29f97dbdd/value
+2019-08-30T17:32:42.805Z INFO webdriver: DATA { text: '', value: [] }
+2019-08-30T17:32:43.302Z INFO webdriver: RESULT 
+2019-08-30T17:32:43.303Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc='Esqueci a senha.']")
+2019-08-30T17:32:43.303Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/6fa32300-876d-431e-93b5-70dbdb075106/element
+2019-08-30T17:32:43.303Z INFO webdriver: DATA { using: 'xpath',
+  value: '//*[@content-desc=\'Esqueci a senha.\']' }
+2019-08-30T17:32:44.006Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '906636cf-6d93-4580-8359-b1c9864673bc',
+  ELEMENT: '906636cf-6d93-4580-8359-b1c9864673bc' }
+2019-08-30T17:32:44.013Z INFO webdriver: COMMAND elementClick("906636cf-6d93-4580-8359-b1c9864673bc")
+2019-08-30T17:32:44.013Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/6fa32300-876d-431e-93b5-70dbdb075106/element/906636cf-6d93-4580-8359-b1c9864673bc/click
+2019-08-30T17:32:44.102Z INFO webdriver: RESULT true
+2019-08-30T17:32:44.103Z INFO webdriver: COMMAND getAlertText()
+2019-08-30T17:32:44.103Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/6fa32300-876d-431e-93b5-70dbdb075106/alert/text
+2019-08-30T17:32:44.869Z INFO webdriver: RESULT Alerta
+Preencha o cpf primeiro.
+  ✓ Testes de esqueci a senha Esqueci a senha - tratamento de erro: 2548ms
+2019-08-30T17:32:44.870Z INFO webdriver: COMMAND deleteSession()
+2019-08-30T17:32:44.870Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/6fa32300-876d-431e-93b5-70dbdb075106
+    Testes de login Login correto: 2019-08-30T17:32:45.518Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session
+2019-08-30T17:32:45.518Z INFO webdriver: DATA { capabilities:
+   { alwaysMatch:
+      { platformName: 'Android',
+        platformVersion: '9',
+        deviceName: 'Nexus 6P Teste API 28',
+        app:
+         '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/android/bin/AppiumAppcelerator.apk',
+        automationName: 'UiAutomator2',
+        appActivity:
+         'br.com.foursys.appiumappcelerator.AppiumappceleratorActivity',
+        appPackage: 'br.com.foursys.appiumappcelerator' },
+     firstMatch: [ {} ] },
+  desiredCapabilities:
+   { platformName: 'Android',
+     platformVersion: '9',
+     deviceName: 'Nexus 6P Teste API 28',
+     app:
+      '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/android/bin/AppiumAppcelerator.apk',
+     automationName: 'UiAutomator2',
+     appActivity:
+      'br.com.foursys.appiumappcelerator.AppiumappceleratorActivity',
+     appPackage: 'br.com.foursys.appiumappcelerator' } }
+2019-08-30T17:32:53.271Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc='Preencha o cpf.']/android.widget.FrameLayout/android.widget.EditText")
+2019-08-30T17:32:53.271Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/55818f9d-5ec8-48bd-ab40-73790787a739/element
+2019-08-30T17:32:53.272Z INFO webdriver: DATA { using: 'xpath',
+  value:
+   '//*[@content-desc=\'Preencha o cpf.\']/android.widget.FrameLayout/android.widget.EditText' }
+2019-08-30T17:32:53.703Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'a25aa648-2051-4745-b999-3b30f335b453',
+  ELEMENT: 'a25aa648-2051-4745-b999-3b30f335b453' }
+2019-08-30T17:32:53.705Z INFO webdriver: COMMAND elementClear("a25aa648-2051-4745-b999-3b30f335b453")
+2019-08-30T17:32:53.705Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/55818f9d-5ec8-48bd-ab40-73790787a739/element/a25aa648-2051-4745-b999-3b30f335b453/clear
+2019-08-30T17:32:53.753Z INFO webdriver: RESULT Element Cleared
+2019-08-30T17:32:53.754Z INFO webdriver: COMMAND elementSendKeys("a25aa648-2051-4745-b999-3b30f335b453", "123.456.789-01", <object>)
+2019-08-30T17:32:53.754Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/55818f9d-5ec8-48bd-ab40-73790787a739/element/a25aa648-2051-4745-b999-3b30f335b453/value
+2019-08-30T17:32:53.754Z INFO webdriver: DATA { text: '123.456.789-01',
+  value:
+   [ '1', '2', '3', '.', '4', '5', '6', '.', '7', '8', '9', '-', '0', '1' ] }
+2019-08-30T17:32:54.753Z INFO webdriver: RESULT 
+2019-08-30T17:32:54.753Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc='Preencha a senha.']/android.widget.FrameLayout/android.widget.EditText")
+2019-08-30T17:32:54.753Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/55818f9d-5ec8-48bd-ab40-73790787a739/element
+2019-08-30T17:32:54.754Z INFO webdriver: DATA { using: 'xpath',
+  value:
+   '//*[@content-desc=\'Preencha a senha.\']/android.widget.FrameLayout/android.widget.EditText' }
+2019-08-30T17:32:55.353Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '93702c5f-edc5-4f4a-a31d-4203c1d580c4',
+  ELEMENT: '93702c5f-edc5-4f4a-a31d-4203c1d580c4' }
+2019-08-30T17:32:55.354Z INFO webdriver: COMMAND elementClear("93702c5f-edc5-4f4a-a31d-4203c1d580c4")
+2019-08-30T17:32:55.355Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/55818f9d-5ec8-48bd-ab40-73790787a739/element/93702c5f-edc5-4f4a-a31d-4203c1d580c4/clear
+2019-08-30T17:32:55.403Z INFO webdriver: RESULT Element Cleared
+2019-08-30T17:32:55.405Z INFO webdriver: COMMAND elementSendKeys("93702c5f-edc5-4f4a-a31d-4203c1d580c4", "123456", <object>)
+2019-08-30T17:32:55.406Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/55818f9d-5ec8-48bd-ab40-73790787a739/element/93702c5f-edc5-4f4a-a31d-4203c1d580c4/value
+2019-08-30T17:32:55.406Z INFO webdriver: DATA { text: '123456', value: [ '1', '2', '3', '4', '5', '6' ] }
+2019-08-30T17:32:56.660Z INFO webdriver: RESULT 
+2019-08-30T17:32:56.661Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc='Entrar.']")
+2019-08-30T17:32:56.661Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/55818f9d-5ec8-48bd-ab40-73790787a739/element
+2019-08-30T17:32:56.661Z INFO webdriver: DATA { using: 'xpath', value: '//*[@content-desc=\'Entrar.\']' }
+2019-08-30T17:32:57.207Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '8961711b-873d-4c9a-b753-fbde55155d1b',
+  ELEMENT: '8961711b-873d-4c9a-b753-fbde55155d1b' }
+2019-08-30T17:32:57.209Z INFO webdriver: COMMAND elementClick("8961711b-873d-4c9a-b753-fbde55155d1b")
+2019-08-30T17:32:57.209Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/55818f9d-5ec8-48bd-ab40-73790787a739/element/8961711b-873d-4c9a-b753-fbde55155d1b/click
+2019-08-30T17:32:57.253Z INFO webdriver: RESULT true
+2019-08-30T17:32:57.254Z INFO webdriver: COMMAND getAlertText()
+2019-08-30T17:32:57.256Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/55818f9d-5ec8-48bd-ab40-73790787a739/alert/text
+2019-08-30T17:32:57.953Z INFO webdriver: RESULT Alerta
+Sucesso
+  ✓ Testes de login Login correto: 4682ms
+2019-08-30T17:32:57.954Z INFO webdriver: COMMAND deleteSession()
+2019-08-30T17:32:57.954Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/55818f9d-5ec8-48bd-ab40-73790787a739
+    Testes de login Login incorreto: 2019-08-30T17:32:58.355Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session
+2019-08-30T17:32:58.355Z INFO webdriver: DATA { capabilities:
+   { alwaysMatch:
+      { platformName: 'Android',
+        platformVersion: '9',
+        deviceName: 'Nexus 6P Teste API 28',
+        app:
+         '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/android/bin/AppiumAppcelerator.apk',
+        automationName: 'UiAutomator2',
+        appActivity:
+         'br.com.foursys.appiumappcelerator.AppiumappceleratorActivity',
+        appPackage: 'br.com.foursys.appiumappcelerator' },
+     firstMatch: [ {} ] },
+  desiredCapabilities:
+   { platformName: 'Android',
+     platformVersion: '9',
+     deviceName: 'Nexus 6P Teste API 28',
+     app:
+      '/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/android/bin/AppiumAppcelerator.apk',
+     automationName: 'UiAutomator2',
+     appActivity:
+      'br.com.foursys.appiumappcelerator.AppiumappceleratorActivity',
+     appPackage: 'br.com.foursys.appiumappcelerator' } }
+2019-08-30T17:33:07.512Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc='Preencha o cpf.']/android.widget.FrameLayout/android.widget.EditText")
+2019-08-30T17:33:07.513Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/30bd05d3-5460-46a1-aaf0-1b75fe2d5dba/element
+2019-08-30T17:33:07.513Z INFO webdriver: DATA { using: 'xpath',
+  value:
+   '//*[@content-desc=\'Preencha o cpf.\']/android.widget.FrameLayout/android.widget.EditText' }
+2019-08-30T17:33:07.965Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'd92602cd-5f49-41bb-8762-090225962ef8',
+  ELEMENT: 'd92602cd-5f49-41bb-8762-090225962ef8' }
+2019-08-30T17:33:07.968Z INFO webdriver: COMMAND elementClear("d92602cd-5f49-41bb-8762-090225962ef8")
+2019-08-30T17:33:07.968Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/30bd05d3-5460-46a1-aaf0-1b75fe2d5dba/element/d92602cd-5f49-41bb-8762-090225962ef8/clear
+2019-08-30T17:33:08.054Z INFO webdriver: RESULT Element Cleared
+2019-08-30T17:33:08.055Z INFO webdriver: COMMAND elementSendKeys("d92602cd-5f49-41bb-8762-090225962ef8", "123.456.789-01", <object>)
+2019-08-30T17:33:08.056Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/30bd05d3-5460-46a1-aaf0-1b75fe2d5dba/element/d92602cd-5f49-41bb-8762-090225962ef8/value
+2019-08-30T17:33:08.056Z INFO webdriver: DATA { text: '123.456.789-01',
+  value:
+   [ '1', '2', '3', '.', '4', '5', '6', '.', '7', '8', '9', '-', '0', '1' ] }
+2019-08-30T17:33:09.553Z INFO webdriver: RESULT 
+2019-08-30T17:33:09.553Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc='Preencha a senha.']/android.widget.FrameLayout/android.widget.EditText")
+2019-08-30T17:33:09.553Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/30bd05d3-5460-46a1-aaf0-1b75fe2d5dba/element
+2019-08-30T17:33:09.553Z INFO webdriver: DATA { using: 'xpath',
+  value:
+   '//*[@content-desc=\'Preencha a senha.\']/android.widget.FrameLayout/android.widget.EditText' }
+2019-08-30T17:33:10.103Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': '77d0425b-fa89-4987-8eee-d3f1c7784af6',
+  ELEMENT: '77d0425b-fa89-4987-8eee-d3f1c7784af6' }
+2019-08-30T17:33:10.106Z INFO webdriver: COMMAND elementClear("77d0425b-fa89-4987-8eee-d3f1c7784af6")
+2019-08-30T17:33:10.106Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/30bd05d3-5460-46a1-aaf0-1b75fe2d5dba/element/77d0425b-fa89-4987-8eee-d3f1c7784af6/clear
+2019-08-30T17:33:10.156Z INFO webdriver: RESULT Element Cleared
+2019-08-30T17:33:10.178Z INFO webdriver: COMMAND elementSendKeys("77d0425b-fa89-4987-8eee-d3f1c7784af6", "12345601", <object>)
+2019-08-30T17:33:10.178Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/30bd05d3-5460-46a1-aaf0-1b75fe2d5dba/element/77d0425b-fa89-4987-8eee-d3f1c7784af6/value
+2019-08-30T17:33:10.178Z INFO webdriver: DATA { text: '12345601',
+  value: [ '1', '2', '3', '4', '5', '6', '0', '1' ] }
+2019-08-30T17:33:11.163Z INFO webdriver: RESULT 
+2019-08-30T17:33:11.164Z INFO webdriver: COMMAND findElement("xpath", "//*[@content-desc='Entrar.']")
+2019-08-30T17:33:11.164Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/30bd05d3-5460-46a1-aaf0-1b75fe2d5dba/element
+2019-08-30T17:33:11.164Z INFO webdriver: DATA { using: 'xpath', value: '//*[@content-desc=\'Entrar.\']' }
+2019-08-30T17:33:11.753Z INFO webdriver: RESULT { 'element-6066-11e4-a52e-4f735466cecf': 'aa636080-c084-488e-a7fc-9e091884c4e2',
+  ELEMENT: 'aa636080-c084-488e-a7fc-9e091884c4e2' }
+2019-08-30T17:33:11.756Z INFO webdriver: COMMAND elementClick("aa636080-c084-488e-a7fc-9e091884c4e2")
+2019-08-30T17:33:11.756Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/30bd05d3-5460-46a1-aaf0-1b75fe2d5dba/element/aa636080-c084-488e-a7fc-9e091884c4e2/click
+2019-08-30T17:33:11.804Z INFO webdriver: RESULT true
+2019-08-30T17:33:11.804Z INFO webdriver: COMMAND getAlertText()
+2019-08-30T17:33:11.804Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/30bd05d3-5460-46a1-aaf0-1b75fe2d5dba/alert/text
+2019-08-30T17:33:12.414Z INFO webdriver: RESULT Alerta
+Falhou
+  ✓ Testes de login Login incorreto: 4902ms
+2019-08-30T17:33:12.414Z INFO webdriver: COMMAND deleteSession()
+2019-08-30T17:33:12.414Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/30bd05d3-5460-46a1-aaf0-1b75fe2d5dba
+
+  4 passing (50s)
+

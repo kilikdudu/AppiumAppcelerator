@@ -4,7 +4,7 @@
   "description": "Sample test",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/cenario",
+    "test": "mocha test/cenario --plataforma=android > report_android | mocha test/cenario --plataforma=ios > report_ios",
     "clean": "rm -rf node_modules && rm -f package-lock.json && npm install"
   },
   "config":{

@@ -1,15 +1,24 @@
 function doClick(e) {
 	if($.TextField1.value == "123.456.789-01" && $.TextField2.value == "123456" ) {
-		alert("Sucesso");
+		alerta("Sucesso");
 	} else {
-		alert("Falhou");
+		alerta("Falhou");
 	}
 }
 $.index.open();
 
 function doEsqueci(e){
 	if($.TextField1.value)
-		alert("Sua nova senha foi enviada para o seu email.");
+		alerta("Sua nova senha foi enviada para o seu email.");
 	else
-		alert("Preencha o cpf primeiro.");
+		alerta("Preencha o cpf primeiro.");
+}
+
+function alerta(mensagem) {
+	var dialog = Ti.UI.createAlertDialog({
+    message: mensagem,
+    ok: 'ok',
+		title: "Alerta"
+  });
+  dialog.show();
 }

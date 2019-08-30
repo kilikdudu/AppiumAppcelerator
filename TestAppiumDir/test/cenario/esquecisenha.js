@@ -3,10 +3,11 @@
 const webdriverio = require("webdriverio");
 const assert = require('chai').assert;
 const config = require('../config.js');
+const util = require('../util.js');
 
 const opts = {
   port: config.porta,
-  capabilities: config.capabilities
+  capabilities: util.getDeviceCapabilities()
 };
 
 
@@ -22,23 +23,23 @@ describe('Testes de esqueci a senha', function () {
   });
 
   it('Esqueci a senha correto', async function () {
-    const fieldCpf = await client.$("~Preencha o cpf");
+    const fieldCpf = await util.findElement(client, "Preencha o cpf", util.EleType.TextInput);
     await fieldCpf.setValue(config.cpf);
 
-    let element = await client.$("~Esqueci a senha");
+    let element = await util.findElement(client, "Esqueci a senha");
     await element.click();
 
-    assert.equal(await client.getAlertText(), 'Sua nova senha foi enviada para o seu email.');
+    assert.equal(await util.getAlertText(client), 'Sua nova senha foi enviada para o seu email.');
   });
 
   it('Esqueci a senha - tratamento de erro', async function () {
-    const fieldCpf = await client.$("~Preencha o cpf");
+    const fieldCpf = await util.findElement(client, "Preencha o cpf", util.EleType.TextInput);
     await fieldCpf.setValue("");
 
-    let element = await client.$("~Esqueci a senha");
+    let element = await util.findElement(client, "Esqueci a senha");
     await element.click();
 
-    assert.equal(await client.getAlertText(), 'Preencha o cpf primeiro.');
+    assert.equal(await util.getAlertText(client), 'Preencha o cpf primeiro.');
   });
 
 });
