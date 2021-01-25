@@ -1,0 +1,86 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-09-27T19:45:56.753Z",
+    "end": "2019-09-27T19:46:44.574Z",
+    "duration": 47821
+  },
+  "suites": [
+    {
+      "title": "Testes de esqueci a senha",
+      "tests": [
+        {
+          "fullTitle": "Testes de esqueci a senha Esqueci a senha correto",
+          "title": "Esqueci a senha correto",
+          "duration": 2482,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "fullTitle": "Testes de esqueci a senha Esqueci a senha - tratamento de erro",
+          "title": "Esqueci a senha - tratamento de erro",
+          "duration": 2534,
+          "result": "passed",
+          "err": {}
+        }
+      ],
+      "suites": []
+    },
+    {
+      "title": "Testes de login",
+      "tests": [
+        {
+          "fullTitle": "Testes de login Login correto",
+          "title": "Login correto",
+          "duration": 4838,
+          "result": "passed",
+          "err": {}
+        },
+        {
+          "fullTitle": "Testes de login Login incorreto",
+          "title": "Login incorreto",
+          "duration": 4841,
+          "result": "passed",
+          "err": {}
+        }
+      ],
+      "suites": []
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "fullTitle": "Testes de esqueci a senha Esqueci a senha correto",
+      "title": "Esqueci a senha correto",
+      "duration": 2482,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "fullTitle": "Testes de esqueci a senha Esqueci a senha - tratamento de erro",
+      "title": "Esqueci a senha - tratamento de erro",
+      "duration": 2534,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "fullTitle": "Testes de login Login correto",
+      "title": "Login correto",
+      "duration": 4838,
+      "result": "passed",
+      "err": {}
+    },
+    {
+      "fullTitle": "Testes de login Login incorreto",
+      "title": "Login incorreto",
+      "duration": 4841,
+      "result": "passed",
+      "err": {}
+    }
+  ]
+}

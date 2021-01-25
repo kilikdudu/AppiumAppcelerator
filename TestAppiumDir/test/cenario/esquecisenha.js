@@ -7,7 +7,18 @@ const util = require('../util.js');
 
 const opts = {
   port: config.porta,
-  capabilities: util.getDeviceCapabilities()
+  capabilities: util.getDeviceCapabilities(),
+  reporters: [
+        // Like this with the default options, see the options below
+        'cucumberjs-json',
+
+        // OR like this if you want to set the folder and the language
+        [ 'cucumberjs-json', {
+                jsonFolder: './tmp/new/',
+                language: 'en',
+            },
+        ],
+    ]
 };
 
 

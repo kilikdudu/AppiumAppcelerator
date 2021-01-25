@@ -1,0 +1,254 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-09-27T19:30:02.709Z",
+    "end": "2019-09-27T19:30:49.738Z",
+    "duration": 47029,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "87c42d76-da25-410f-a643-b2108b450123",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "24bd5a88-dab8-4178-9428-15aab0696e9b",
+          "title": "Testes de esqueci a senha",
+          "fullFile": "/Users/carlos/Documents/GitHub/AppiumAppcelerator/TestAppiumDir/test/cenario/esquecisenha.js",
+          "file": "/test/cenario/esquecisenha.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook",
+              "fullTitle": "Testes de esqueci a senha \"before each\" hook",
+              "timedOut": false,
+              "duration": 6591,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "client = await webdriverio.remote(opts);",
+              "err": {},
+              "uuid": "bcfcbfa4-1deb-4abf-a1d3-5d8f1037a3e1",
+              "parentUUID": "24bd5a88-dab8-4178-9428-15aab0696e9b",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook",
+              "fullTitle": "Testes de esqueci a senha \"after each\" hook",
+              "timedOut": false,
+              "duration": 304,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await client.deleteSession();",
+              "err": {},
+              "uuid": "f5664fce-74b6-4c23-b2bb-b2db4b2a268d",
+              "parentUUID": "24bd5a88-dab8-4178-9428-15aab0696e9b",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Esqueci a senha correto",
+              "fullTitle": "Testes de esqueci a senha Esqueci a senha correto",
+              "timedOut": false,
+              "duration": 2960,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const fieldCpf = await util.findElement(client, \"Preencha o cpf\", util.EleType.TextInput);\nawait fieldCpf.setValue(config.cpf);\nlet element = await util.findElement(client, \"Esqueci a senha\");\nawait element.click();\nassert.equal(await util.getAlertText(client), 'Sua nova senha foi enviada para o seu email.');",
+              "err": {},
+              "uuid": "2ed0f1a5-d461-4b8d-98d7-9d5da0e3a460",
+              "parentUUID": "24bd5a88-dab8-4178-9428-15aab0696e9b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Esqueci a senha - tratamento de erro",
+              "fullTitle": "Testes de esqueci a senha Esqueci a senha - tratamento de erro",
+              "timedOut": false,
+              "duration": 3017,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const fieldCpf = await util.findElement(client, \"Preencha o cpf\", util.EleType.TextInput);\nawait fieldCpf.setValue(\"\");\nlet element = await util.findElement(client, \"Esqueci a senha\");\nawait element.click();\nassert.equal(await util.getAlertText(client), 'Preencha o cpf primeiro.');",
+              "err": {},
+              "uuid": "f63cc1f1-f16a-4bca-b7d1-e669c6161cd8",
+              "parentUUID": "24bd5a88-dab8-4178-9428-15aab0696e9b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2ed0f1a5-d461-4b8d-98d7-9d5da0e3a460",
+            "f63cc1f1-f16a-4bca-b7d1-e669c6161cd8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5977,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 1800000
+        },
+        {
+          "uuid": "2650f54b-5d12-48ba-9c13-96dca3cbd66b",
+          "title": "Testes de login",
+          "fullFile": "/Users/carlos/Documents/GitHub/AppiumAppcelerator/TestAppiumDir/test/cenario/login.js",
+          "file": "/test/cenario/login.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook",
+              "fullTitle": "Testes de login \"before each\" hook",
+              "timedOut": false,
+              "duration": 7460,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "client = await webdriverio.remote(opts);",
+              "err": {},
+              "uuid": "08301444-05b3-46c7-90e1-9ec6ac85cf8c",
+              "parentUUID": "2650f54b-5d12-48ba-9c13-96dca3cbd66b",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook",
+              "fullTitle": "Testes de login \"after each\" hook",
+              "timedOut": false,
+              "duration": 305,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await client.deleteSession();",
+              "err": {},
+              "uuid": "74bebfc1-5615-4a68-a2fc-b585b6544150",
+              "parentUUID": "2650f54b-5d12-48ba-9c13-96dca3cbd66b",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Login correto",
+              "fullTitle": "Testes de login Login correto",
+              "timedOut": false,
+              "duration": 4993,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const fieldCpf = await util.findElement(client, \"Preencha o cpf\", util.EleType.TextInput);\nawait fieldCpf.setValue(config.cpf);\nconst fieldSenha = await util.findElement(client, \"Preencha a senha\", util.EleType.TextInput);\nawait fieldSenha.setValue(config.senha);\nlet element = await util.findElement(client, \"Entrar\");\nawait element.click();\nassert.equal(await util.getAlertText(client), 'Sucesso');",
+              "err": {},
+              "uuid": "14fd22f9-ec71-4302-b9cc-df94fdec9c91",
+              "parentUUID": "2650f54b-5d12-48ba-9c13-96dca3cbd66b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login incorreto",
+              "fullTitle": "Testes de login Login incorreto",
+              "timedOut": false,
+              "duration": 4589,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const fieldCpf = await util.findElement(client, \"Preencha o cpf\", util.EleType.TextInput);\nawait fieldCpf.setValue(config.cpf);\nconst fieldSenha = await util.findElement(client, \"Preencha a senha\", util.EleType.TextInput);\nawait fieldSenha.setValue(config.senha + \"01\");\nlet element = await util.findElement(client, \"Entrar\");\nawait element.click();\nassert.equal(await util.getAlertText(client), 'Falhou');",
+              "err": {},
+              "uuid": "acf514ed-05a6-43f6-baec-c6a9d883d7b6",
+              "parentUUID": "2650f54b-5d12-48ba-9c13-96dca3cbd66b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "14fd22f9-ec71-4302-b9cc-df94fdec9c91",
+            "acf514ed-05a6-43f6-baec-c6a9d883d7b6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9582,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 1800000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 1800000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "output": "report_android.html"
+      },
+      "version": "4.0.1"
+    }
+  }
+}

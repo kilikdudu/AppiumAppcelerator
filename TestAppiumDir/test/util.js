@@ -32,10 +32,6 @@ exports.findElement = async function(client, locator, type) {
 };
 
 exports.getAlertText = async function(client) {
-  if(exports.getDeviceCapabilities().platformName === 'Android') {
-    let alerta = await client.getAlertText();
-    return alerta.split("\n")[1];
-  } else {
-    return await client.getAlertText();
-  }
+  let alerta = await client.getAlertText();
+  return alerta.split("\n")[1];
 };

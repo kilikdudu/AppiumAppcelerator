@@ -2,8 +2,8 @@ module.exports = {
   porta: 4723,
   capabilities_ios: {
     platformName: "iOS",
-    platformVersion: "12.4",
-    deviceName: "iPhone 6s Plus",
+    platformVersion: "13.0",
+    deviceName: "iPhone 8 Plus",
     app: "/Users/carlos/Documents/GitHub/AppiumAppcelerator/build/iphone/build/Products/Debug-iphonesimulator/AppiumAppcelerator.app",
     automationName: "xcuitest"
   },
